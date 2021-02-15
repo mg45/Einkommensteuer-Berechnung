@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkommensteuer Berechnung</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Resources -->
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+</head>
+
+<body>
+    <main>
+        <section>
+            <form id="zve-calc">
+                <p>Year:</p>
+                <input type="radio" id="twenty-twenty" name="year" value="2020">
+                <label for="twenty-twenty">2020</label><br>
+                <input type="radio" id="twenty-twenty-one" name="year" value="2021">
+                <label for="twenty-twenty-one">2021</label><br>
+
+                <br>
+
+                <p>Art of:</p>
+                <input type="radio" id="single" name="type-of-calc" value="single">
+                <label for="single">Einzel</label><br>
+                <input type="radio" id="together" name="type-of-calc" value="together">
+                <label for="together">together</label><br>
+
+                <br>
+
+                <input type="number" name="zve" id="zve">
+    
+                <input id="calc-btn" type="submit" value="Submit">
+            </form>
+        </section>
+        <div id="result">
+        </div>
+        <section>
+            <div id="chartdiv">
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/chart.js"></script>
+</body>
+
+</html>
